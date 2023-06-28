@@ -45,9 +45,13 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Anirban | About page</title>
-        <meta name="description" content="any description" />
-      </Head>
+  <title>Anirban Chakraborty | About</title>
+  <meta
+    name="description"
+    content="Learn more about me, my background, skills, and passion for innovative full stack web development, Java, AWS, GCP, and networking."
+  />
+</Head>
+
       <TransitionEffect/>
       <main className="dark:text-light flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
@@ -80,7 +84,7 @@ const about = () => {
               (max-width: 1200px) 50vw,
               33vw"
                 src={profilePic}
-                alt="Anirban"
+                alt="Anirban Chakraborty About Photo"
                 className="w-full h-auto rounded-2xl"
               />
             </div>

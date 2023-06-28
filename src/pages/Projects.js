@@ -56,7 +56,9 @@ const CreateFeaturedProject = ({ type, title, summary, img, link, github }) => {
       </Link>
 
       <div className="w-1/2 lg:w-full lg:pl-0 lg:pt-6 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary xs:text-base dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary xs:text-base dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -67,7 +69,9 @@ const CreateFeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}{" "}
           </h2>
         </Link>
-        <p className="my-2 sm:text-sm dark:text-light font-medium text-dark">{summary}</p>
+        <p className="my-2 sm:text-sm dark:text-light font-medium text-dark">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center justify-center">
           <Link className="w-10" href={github} target="_blank">
             <GithubIcon />
@@ -129,9 +133,10 @@ const Project = ({ title, type, img, link, github }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
     >
-
-<div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-[1rem]
-md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"/>
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-[1rem]
+md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+      />
 
       <Link
         className="w-full cursor-pointer overflow-hidden rounded-lg"
@@ -139,8 +144,8 @@ md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"/>
         target="_blank"
       >
         <FramerImage
-        priority
-        sizes="(max-width: 768px) 100vw,
+          priority
+          sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw"
           src={img}
@@ -152,7 +157,9 @@ md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"/>
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -185,10 +192,14 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>Anirban | Projects page</title>
-        <meta name="description" content="any description" />
+        <title>Anirban Chakraborty - Projects</title>
+        <meta
+          name="description"
+          content="Check out my projects, showcasing my innovative coding skills, creative designs, and passion for bringing ideas to life with a unique twist."
+        />
       </Head>
-      <TransitionEffect/>
+
+      <TransitionEffect />
       <main className="w-full dark:text-light mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText

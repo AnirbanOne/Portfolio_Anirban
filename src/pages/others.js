@@ -129,7 +129,7 @@ const others = () => {
           </ul>
 
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All Articles
+            Achievements
           </h2>
           <ul>
             <Article
