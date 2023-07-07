@@ -7,6 +7,11 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/icons";
 import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import Project2 from "../../public/images/projects/dashboardProject.jpeg";
+import Project3 from "../../public/images/projects/Screenshot 2023-07-07 095811.png";
+import Project4 from "../../public/images/projects/todo.png";
+import Project5 from "../../public/images/projects/gpt.png";
+import Project6 from "../../public/images/projects/pineapple.png";
+
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -209,6 +214,35 @@ const Projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <CreateFeaturedProject
+                title="Nike Ecommerce Website"
+                img={Project3}
+                summary="Amazing E-commerce Nike clone made using Next.js, Strapi Headless CMS, Stripe, Redux (for cart management) and hosted using Render(Backend) and Vercel(Frontend)"
+                link="https://frontend-nike-clone-anirban.vercel.app"
+                github="https://github.com/AnirbanOne/frontend-nike-clone-anirban"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="ToDOOOOOO! (ToDo app using Next.js and FireBase)"
+                img={Project4}
+                link="https://firebase-todo-anirban.vercel.app/"
+                github="https://github.com/AnirbanOne/firebase-todo-anirban"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="MyGPT using Next.js"
+                img={Project5}
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+
+            <div className="col-span-12">
+            <CreateFeaturedProject
                 title="Dashboard for CRCS portal Government"
                 img={Project2}
                 summary="
@@ -220,7 +254,7 @@ Introducing the CRCS Dashboard, a user-friendly portal designed to streamline op
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="ChatGPT using React"
+                title="University Management System using JAVA"
                 img={Project1}
                 link="/"
                 github="/"
@@ -229,41 +263,10 @@ Introducing the CRCS Dashboard, a user-friendly portal designed to streamline op
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={Project1}
+                title="PineApple, an Apple Clone!"
+                img={Project6}
                 link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-
-            <div className="col-span-12">
-              <CreateFeaturedProject
-                title="Crypto Screener Application"
-                img={Project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={Project1}
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={Project1}
-                link="/"
-                github="/"
+                github="https://github.com/AnirbanOne/PineAppletemp"
                 type="Featured Project"
               />
             </div>
